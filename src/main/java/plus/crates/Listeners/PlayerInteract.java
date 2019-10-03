@@ -39,7 +39,7 @@ public class PlayerInteract implements Listener {
             if (event.getClickedBlock().getType() != Material.CHEST)
                 return;
             Chest chest = (Chest) event.getClickedBlock().getState();
-            String title = chest.getCustomName().toString();
+            String title = chest.getCustomName();
             if (title == null)
                 return;
             if (title.contains(" Crate!"))
